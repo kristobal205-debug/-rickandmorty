@@ -29,7 +29,7 @@ function App() {
     <div className="app-layout">
       <header className="app-header">
         <h1>Rick & Morty Explorer</h1>
-        <p className="integrantes">Integrantes: Kristobal Ledezma, Bastián Madariaga</p>
+        <p className="integrantes">Integrantes: Kristobal Ledezma</p>
       </header>
 
       <Stats total={allCharacters.length} />
