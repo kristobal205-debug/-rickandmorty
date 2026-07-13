@@ -1,0 +1,130 @@
+:root {
+  --portal-green: #7ee081;
+  --panel-bg: #131c31;
+  --card-bg: #1b2743;
+  --accent-danger: #ff6b6b;
+  --border-subtle: #263455;
+}
+
+.app-layout {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--portal-green);
+}
+
+.integrantes {
+  color: #9aa5bd;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* ---------- Stats ---------- */
+.stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background: var(--panel-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 10px 24px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--portal-green);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #9aa5bd;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- Search ---------- */
+.search-bar input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  background: var(--panel-bg);
+  color: #e8ecf1;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.search-bar input:focus {
+  outline: 2px solid var(--portal-green);
+}
+
+/* ---------- Grid de personajes ---------- */
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.character-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.character-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.character-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.character-info h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.character-info p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #9aa5bd;
+}
+
+.loading-message,
+.error-message,
+.empty-message {
+  text-align: center;
+  color: #9aa5bd;
+  padding: 20px;
+}
+
+.error-message {
+  color: var(--accent-danger);
+}
